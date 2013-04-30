@@ -1,5 +1,13 @@
-% Source files and data for the Bacterial Compressed Sensing (BCS) algorithm
-See: Amnon Amir & Or Zuk - 
+BCS
+---
+Bacterial Compressed Sensing
+
+The package contains source and data for the Bacterial Compressed Sensing (BCS) algorithm, 
+presented in the paper
+"Bacterial Community Reconstruction Using Compressed Sensing"
+A. Amir and O. Zuk. Journal of Computational Biology, 18(11):1723-1741 (2011) 
+
+Please cite the above paper if using the package. 
 
 All files are detailes in files.txt
 in order to run a simulation:
@@ -18,5 +26,7 @@ or alternatively
 5. Reconstruct for each offset using GPSRChromatogram.m
 6. Find the best offset for reconstruction (minimal reconstruction distance from original chromatogram)
 Note that if the original mixture is known, offset can also be found using TestBinning for various offsets
+
+For any questions and comments, please contact: Or Zuk, orzuk@ttic.edu
 
 
