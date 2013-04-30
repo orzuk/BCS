@@ -1,0 +1,63 @@
+% Bacterial Compressed Sensing - List of Files.
+
+Data files: 
+-----------
+Positions_Stats.txt - The table for the local-sequence effect on peak-peak distances (P)
+	contains 6 columns:
+		local sequence (0-4095)
+		num of 6-mers in training set
+		non-normalized peak-peak distance
+		non-normalized peak-peak distance standatd deviation
+		normalized peak-peak distance
+		normalized peak-peak distance standatd deviation 
+Height_Stats.txt - The table for the local-sequence effect on peak height (H):
+	contains 4 columns:
+		local sequence (0-4095)
+		num of 6-mers in training set
+		height mean
+		height standard deviation
+	PeakHeightStat.pl - The perl program used to collect the peak height statistics
+	PeakPosStat.pl - The perl program used to collect the peak position statistics
+
+
+	3001_VF-r1510.fasta - the experimentally determined sequence of strain Vibrio Fischeri used in the mixture
+	3001_PL-r1510.fasta - the experimentally determined sequence of strain Photobacterium Leiognathi used in the mixture
+	3001_EF-r1510.fasta - the experimentally determined sequence of strain Enterococcus Faecalis used in the mixture
+	3001_SE-r1510.fasta - the experimentally determined sequence of strain Staphylococcus Epidermidis used in the mixture
+	3603_mix5-1510R.scf - the chromatogram of the experimental mixture (5 species)
+
+    16S rRNA database:
+	Directory Original:
+		AllSeqs.mat - the original grenegenes sequence database
+	Directory Aligned 1510R:
+		RC1510Rseq.mat - Database after alignment to primer 1510R
+		RC1510RseqName.mat - Name of sequences in this database
+		RC1510RIndices.mat - Original indices (from the original greengenes database) of sequences in this database
+	Directory Reduced:
+		Red-Rev-Seq.mat - Database after removal of similar sequences
+		Red-Rev-Name.mat - Name of sequences in this database
+		Red-Rev-Ind.mat - Indices (from the aligned database) of sequences in this database
+	ReduceSetFast.c - the mex file for removing similar sequences
+	trueseqecoli.mat - the sequence of E. coli used (to be added to the database).
+	trueseqEF.mat - the sequence of Enterococcus faecalis (to be added to the database).
+
+    Database Preprocessing:
+	PredictFullSeqSqrVar.m - Predict the binned chromatograms for a sequence database
+	PredBinSqrt.mat - the predicted binned and sqrt transformed sequence database
+
+    Chromatogram Preprocessing:
+	BinChromatogram.m - Bin an experimental chromatogram to constant sized bins
+	TestBinning.m - Compare predicted and measured binned chromatograms
+
+    Reconstruction Algorithm:
+	GPSRSimulation.m - Solve the CS problem for a simulated mixture
+	GPSRChromatogram.m - Solve the CS problem for an experimental chromatogram
+
+    TestReconstruction:
+	SensSel2.m - Compute the recall/precision/rmse for various threholds for a simulation reconstruction
+	CompareSets5.m - Compare a mixture and its reconstruction (used by SensSel2.m)
+	SeqDist.m - Calculate the hamming distance between two sequences (used by CompareSets5.m)
+
+    Simulation of Mixtures: 
+	GetRandomMixtureVec2.m - Select species and their frequencies from the database
+	SimulateMetagenomeMixture.m - Create a random mixture and calculate the corresponding PSSSM

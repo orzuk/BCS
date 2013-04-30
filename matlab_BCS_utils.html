@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0069)http://www.broadinstitute.org/~orzuk/matlab/matlab_utilities_template.html -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!--<LINK rel="SHORTCUT ICON" href="orzuk.ico">-->
+<LINK rel="stylesheet" href="http://www.broadinstitute.org/~orzuk/orzuk.css" type="text/css"> 
+<TITLE>Matlab bcs utilities</TITLE>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7650195-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</HEAD><BODY>
+
+
+<DIV class="navbar"> 
+<a href="http://www.broadinstitute.org/~orzuk/matlab/libs/matlab_utils.html">libs</a>  :
+</DIV> 
+  <DIV class="sep">
+    <HR>
+  </DIV>
+
+  <DIV class="main">
+    <H2>Matlab bcs utilities</H2>
+
+    <UL>
+
+  <li> <b> Overview: </b> <br> This page accompanies the paper:<br> <A &nbsp;  href="http://www.broadinstitute.org/~orzuk/publications/AmirZuk_BCS_JCB.pdf">Bacterial Community Reconstruction Using Compressed Sensing</A>, A. Amir and O. Zuk, Journal of Computational Biology, 18(11):1-20 (2011) <br>The paper presents the Bacterial Compressed-Sensing (BCS) algorithm. The source code is available as a Matlab package below. <br>The package contains functions for mixture chromatogram simulations, pre-processing and reconstruction.<br> Additional functions are used for handling the database of s16-RNA gene, and for displaying results. <br>Please see the file "readme.txt" for a coprehensive description of the package. <br>In addition, a few data files related to the project are available for download <A &nbsp;  href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/BCS_data.zip"> here </A>. <br> <li> <b> About: </b>  <br> BCS is a collaboration between the Broad Institute and the Weizmann Institute of Science. <br> <li> <b> Installation: </b>  <br> To install the package simply download the file BCS.tgz to a directory of your choice, extract it, and add to your Matlab path. <br> The package uses the GPSR algorithnm, which is available through <A &nbsp;  href="http://www.lx.it.pt/~mtf/GPSR/"> here </A>. <br> For questions, suggestions, bug-reports etc. please contact Amnon Amir (<A href="mailto:amnon.amir@weizmann.ac.il">amnon.amir@weizmann.ac.il</A>) or Or Zuk (<A href="mailto:orzuk@broadinstitute.org">orzuk@broadinstitute.org</A>). <br>Below we list all functions available in the package with their description:  </LI>
+
+    </UL>
+
+<!--    <p>Changes are now logged in the <a href="http://home.online.no/%7Epjacklam/matlab/software/util/statutil/ChangeLog">ChangeLog</a> file.</p>--><!-- Begin m-file index -->
+    <!-- This table was automatically generated -->
+    <!-- by updhtml.pl on Sat Feb 21 14:26:51 2004 -->
+
+    <TABLE summary="M-file index" border="0" cellpadding="0" cellspacing="0">
+      <TBODY><TR>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/BinChromatogram.m" name="BinChromatogram" id="BinChromatogram">BinChromatogram.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Bins the chromatogram (from scfread) into constant sized bins following</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/CompareSets5.m" name="CompareSets5" id="CompareSets5">CompareSets5.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Compare reconstructed mixture to original mixture and calculate statistics</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/GPSRChromatogram.m" name="GPSRChromatogram" id="GPSRChromatogram">GPSRChromatogram.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Run the GPSR algorithm with chromatogram binning predicted for each sequence</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/GPSRSimulation.m" name="GPSRSimulation" id="GPSRSimulation">GPSRSimulation.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Perform reconstruction of a simualted mixture using GPSR</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/GetRandomMixtureVec2.m" name="GetRandomMixtureVec2" id="GetRandomMixtureVec2">GetRandomMixtureVec2.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Get the number of creatures in the mixture and the total number creatures</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/LoadFasta.m" name="LoadFasta" id="LoadFasta">LoadFasta.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Read a fasta file </td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/MultisequenceDemo.m" name="MultisequenceDemo" id="MultisequenceDemo">MultisequenceDemo.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Load the reduced (distance<2 joined together), primer aligned, data</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/PredictFullSeq.m" name="PredictFullSeq" id="PredictFullSeq">PredictFullSeq.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Predict full sequence chromatogram, and divide it into bins</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/PredictFullSeqSqr.m" name="PredictFullSeqSqr" id="PredictFullSeqSqr">PredictFullSeqSqr.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Predict full sequence chromatogram, and divide to bins using quadratic peak position correction </td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/PredictFullSeqSqrVar.m" name="PredictFullSeqSqrVar" id="PredictFullSeqSqrVar">PredictFullSeqSqrVar.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Predict full sequence chromatogram, and divide to bins using quadratic peak position correction </td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/SensSel2.m" name="SensSel2" id="SensSel2">SensSel2.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Compute RMSE/sensitivity/selectivity statistics for various thresholds</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/SeqDist.m" name="SeqDist" id="SeqDist">SeqDist.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Compute Hamming distance between two sequences. </td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/TestBinning.m" name="TestBinning" id="TestBinning">TestBinning.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Compare two binned chromatograms</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/load20srna.m" name="load20srna" id="load20srna">load20srna.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>One time script: convert database to matlab format</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/plotcartogram.m" name="plotcartogram" id="plotcartogram">plotcartogram.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Plots a 4*L matrix as a 'cartogram' </td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/reconstructmixture.m" name="reconstructmixture" id="reconstructmixture">reconstructmixture.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Main reconstrubtion funcion for mixture chromatogram</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/reduceset.m" name="reduceset" id="reduceset">reduceset.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Find homologus sequences and cluster them. </td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/simulatemetagenomemixture.m" name="simulatemetagenomemixture" id="simulatemetagenomemixture">simulatemetagenomemixture.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Generate a random species mixture and calculate the PSSM</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/testmetagenomefunctions.m" name="testmetagenomefunctions" id="testmetagenomefunctions">testmetagenomefunctions.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>A script for testing various functions of the project.</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/ReduceSetFast.c" name="ReduceSetFast" id="ReduceSetFast"><font color="003300">ReduceSetFast.c</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td> Cluster database sequences - unite sequences with few mismatches</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/PeakHeightStat.pl" name="PeakHeightStat." id="PeakHeightStat."><font color="003300">PeakHeightStat.pl</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Collect Statistics for Peak Heights</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/PeakPosStat.pl" name="PeakPosStat." id="PeakPosStat."><font color="003300">PeakPosStat.pl</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Collect Statistics for Peak Positions</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/Files.txt" name="Files.t" id="Files.t"><font color="003300">Files.txt</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Bacterial Compressed Sensing - List of Files.</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/Height_Stats.txt" name="Height_Stats.t" id="Height_Stats.t"><font color="003300">Height_Stats.txt</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>459 0.964989398194068 0.0306361712461953</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/Positions_Stats.txt" name="Positions_Stats.t" id="Positions_Stats.t"><font color="003300">Positions_Stats.txt</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>892 11.8486547085202 0.540995948038373 0.964281845352162 0.00395749709728097</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/readme.txt" name="readme.t" id="readme.t"><font color="003300">readme.txt</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Source files and data for the Bacterial Compressed Sensing (BCS) algorithm</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/BCS.tgz" name="BCS" id="BCS"><STRONG><i>BCS.tgz</i></STRONG></a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td><b><i>Download the whole package. (19 .m files) </i></b></td>
+</tr>
+      <TR>
+    </TR></TBODY></TABLE><!-- End m-file index -->
+  </DIV>
+
+
+  <DIV class="sep">
+    <HR>
+  </DIV>
+
+  <ADDRESS>
+
+Contact: <BR> 
+&nbsp; &nbsp; O. Zuk (<A href="mailto:orzuk@broadinstitute.org">orzuk@broadinstitute.org</A>) <!-- hhmts end -->
+<br> Last Modified: <!--#echo var="LAST_MODIFIED"-->  
+  </ADDRESS>
+</BODY></HTML>

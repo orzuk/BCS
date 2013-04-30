@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0069)http://www.broadinstitute.org/~orzuk/matlab/matlab_utilities_template.html -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!--<LINK rel="SHORTCUT ICON" href="orzuk.ico">-->
+<LINK rel="stylesheet" href="http://www.broadinstitute.org/~orzuk/orzuk.css" type="text/css"> 
+<TITLE>Matlab additional_src utilities</TITLE>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7650195-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</HEAD><BODY>
+
+
+<DIV class="navbar"> 
+<a href="http://www.broadinstitute.org/~orzuk/matlab/libs/matlab_utils.html">libs</a>  :
+<a href="http://www.broadinstitute.org/~orzuk/matlab/libs/additional_src/matlab_additional_src_utils.html">additional_src</a>  :
+</DIV> 
+  <DIV class="sep">
+    <HR>
+  </DIV>
+
+  <DIV class="main">
+    <H2>Matlab additional_src utilities</H2>
+
+    <UL>
+
+      <LI> Matlab additional_src utilities (see documentation and examples within the functions)</LI>
+
+    </UL>
+
+<!--    <p>Changes are now logged in the <a href="http://home.online.no/%7Epjacklam/matlab/software/util/statutil/ChangeLog">ChangeLog</a> file.</p>--><!-- Begin m-file index -->
+    <!-- This table was automatically generated -->
+    <!-- by updhtml.pl on Sat Feb 21 14:26:51 2004 -->
+
+    <TABLE summary="M-file index" border="0" cellpadding="0" cellspacing="0">
+      <TBODY><TR>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/CompareSets6.m" name="CompareSets6" id="CompareSets6">CompareSets6.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Compare two sets </td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/CompareToTruth.m" name="CompareToTruth" id="CompareToTruth">CompareToTruth.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>check the homology of an unknown seq to the database</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/FindBacteria.m" name="FindBacteria" id="FindBacteria">FindBacteria.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Go over all names in bactNames and find indices of names containing name</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/FindBinning.m" name="FindBinning" id="FindBinning">FindBinning.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>nction FindBinning(seqInt,peakWidth)</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/FindDBSeq.m" name="FindDBSeq" id="FindDBSeq">FindDBSeq.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>find the closest bacteria in the db to the sequence</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/GenerateRandSeqDB.m" name="GenerateRandSeqDB" id="GenerateRandSeqDB">GenerateRandSeqDB.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>nction [randSeqDB]=GenerateRandSeqDB(trueSeqDB)</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/GetRandomMixtureVec2.m" name="GetRandomMixtureVec2" id="GetRandomMixtureVec2">GetRandomMixtureVec2.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Get the number of creatures in the mixture and the total number creatures</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/PredictMix.m" name="PredictMix" id="PredictMix">PredictMix.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>predict the chromatogram and binning of a uniform mixture</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/PredictMixSqr.m" name="PredictMixSqr" id="PredictMixSqr">PredictMixSqr.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>predict the chromatogram and binning of a uniform mixture</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/PredictMixSqrVar.m" name="PredictMixSqrVar" id="PredictMixSqrVar">PredictMixSqrVar.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>predict the chromatogram and binning of a uniform mixture</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/RunTryItAll.m" name="RunTryItAll" id="RunTryItAll">RunTryItAll.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>_matlab_flag = 1; 
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/StartWork.m" name="StartWork" id="StartWork">StartWork.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>To prepare the data:</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/TestNoise.m" name="TestNoise" id="TestNoise">TestNoise.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>test the performance of the reconstruction alg. for noisy binned data</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/TestNoiseStat.m" name="TestNoiseStat" id="TestNoiseStat">TestNoiseStat.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>nction [tres]=TestNoiseStat(predbinchrom,predbinchromall,startpos,endpos,tau,noise)</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/TestRun.m" name="TestRun" id="TestRun">TestRun.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>find the closest bacteria to each result</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/TmpTestMixes.m" name="TmpTestMixes" id="TmpTestMixes">TmpTestMixes.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>sp('Simulated MixAll');</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/TryGPSR.m" name="TryGPSR" id="TryGPSR">TryGPSR.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Run the GPSR algorithm </td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/TryGPSRBinAlign.m" name="TryGPSRBinAlign" id="TryGPSRBinAlign">TryGPSRBinAlign.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>try GPSR with chromatogram binning predicted for each sequence</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/TryItAll.m" name="TryItAll" id="TryItAll">TryItAll.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Try reconstruction of a random or true mixture</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/calcseqscore.m" name="calcseqscore" id="calcseqscore">calcseqscore.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Calculate the fit score between the sequence and the reference matrix</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/comparesets.m" name="comparesets" id="comparesets">comparesets.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Compare two sets&scores - evaluate performance of the algorithm's output</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/database_sqrt_script.m" name="database_sqrt_script" id="database_sqrt_script">database_sqrt_script.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>a  one-time script that converts the database to single</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/dirtyhandsandlookatdata.m" name="dirtyhandsandlookatdata" id="dirtyhandsandlookatdata">dirtyhandsandlookatdata.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>First perform unique</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/find_similar.m" name="find_similar" id="find_similar">find_similar.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>What the hell is this? not used currently</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/getbinarybasis.m" name="getbinarybasis" id="getbinarybasis">getbinarybasis.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Compute a binary basis spreading all sequences.</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/getrandommixturevec.m" name="getrandommixturevec" id="getrandommixturevec">getrandommixturevec.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Get the number of creatures and the number of actual creatures and</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/reconstructmixtureold.m" name="reconstructmixtureold" id="reconstructmixtureold">reconstructmixtureold.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Here is the reconstrubtion funcion. Current greedy algorithm sucks.</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/reconstructmixturezuk.m" name="reconstructmixturezuk" id="reconstructmixturezuk">reconstructmixturezuk.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Here is the reconstrubtion funcion.</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/relax.m" name="relax" id="relax">relax.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>Finaly optimization stage: Greedily Remove and add sequences to improve score.</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/runmean.m" name="runmean" id="runmean">runmean.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>RUNMEAN - Very fast running mean (aka moving average) filter</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/simulatemetagenomemixture_zuk.m" name="simulatemetagenomemixture_zuk" id="simulatemetagenomemixture_zuk">simulatemetagenomemixture_zuk.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>First generate the sequences</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/subvector.m" name="subvector" id="subvector">subvector.m</a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td>find the best occurance of a in b (and the match length)</td>
+</tr>
+<tr>
+<td><a href="http://www.broadinstitute.org/~orzuk/matlab/libs/BCS/additional_src/additional_src.tgz" name="additional_src" id="additional_src"><STRONG><i>additional_src.tgz</i></STRONG></a></td>
+
+<td>&nbsp;-&nbsp;</td>
+
+<td><b><i>Download the whole package. (32 .m files) </i></b></td>
+</tr>
+      <TR>
+    </TR></TBODY></TABLE><!-- End m-file index -->
+  </DIV>
+
+
+  <DIV class="sep">
+    <HR>
+  </DIV>
+
+  <ADDRESS>
+
+Contact: <BR> 
+&nbsp; &nbsp; O. Zuk (<A href="mailto:orzuk@broadinstitute.org">orzuk@broadinstitute.org</A>) <!-- hhmts end -->
+<br> Last Modified: <!--#echo var="LAST_MODIFIED"-->  
+  </ADDRESS>
+</BODY></HTML>
