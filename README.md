@@ -27,6 +27,7 @@ or alternatively
 6. Find the best offset for reconstruction (minimal reconstruction distance from original chromatogram)
 Note that if the original mixture is known, offset can also be found using TestBinning for various offsets
 
-For any questions and comments, please contact: Or Zuk, orzuk@ttic.edu
+For any questions and comments, please contact: Amnon Amir, amnonim@gmail.com or 
+						Or Zuk, orzuk@ttic.edu
 
 
